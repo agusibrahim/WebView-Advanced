@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ai.agusibrahim.wva" >
-
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -13,10 +15,51 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+		<activity
+			android:label="Basic Web Events"
+			android:name=".wv.WVBasicEvent" />
+		<activity
+			android:label="Basic WebView"
+			android:name=".wv.WVBasic" />
+		<activity
+			android:label="Load Progress"
+			android:name=".wv.WVLoadProgress" />
+		<activity
+			android:label="Disable Images"
+			android:name=".wv.WVDisableImage" />
+		<activity
+			android:label="Block Content"
+			android:name=".wv.WVDisableImagePlus" />
+		<activity
+			android:label="Load from String"
+			android:name=".wv.WVLoadFromString" />
+		<activity
+			android:label="Custom Error"
+			android:name=".wv.WVCustomError" />
+		<activity
+			android:label="JS Mod and Hook"
+			android:name=".wv.WVJSDataTransaction" />
+		<activity
+			android:label="Source Viewer"
+			android:name=".wv.WVSourceViewer" />
+		<activity
+			android:label="Form Interaction"
+			android:name=".wv.WVFormInteract" />
+		<activity
+			android:label="Youtube Downloader"
+			android:name=".wv.WVYoutubeDl" />
+		<activity
+			android:label="Context Menu"
+			android:name=".wv.WVContextMenu" />
+		<activity
+			android:label="Upload/Download Handle"
+			android:name=".wv.WVUploadHandle" />
+		<activity
+			android:label="Web Screenshot"
+			android:name=".wv.WVScreenshot" />
     </application>
 
 </manifest>
